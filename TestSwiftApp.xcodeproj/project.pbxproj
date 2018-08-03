@@ -13,6 +13,10 @@
 		442210D721115B5B00720C22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 442210D621115B5B00720C22 /* Assets.xcassets */; };
 		442210DA21115B5B00720C22 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 442210D821115B5B00720C22 /* LaunchScreen.storyboard */; };
 		44AFB40921118440000B336E /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44AFB40821118440000B336E /* CalculatorViewController.swift */; };
+		44D81307211421EC00F9F9B6 /* SampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D81306211421EC00F9F9B6 /* SampleViewController.swift */; };
+		44D8130E211426B300F9F9B6 /* SampleXIBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D8130C211426B300F9F9B6 /* SampleXIBViewController.swift */; };
+		44D8130F211426B300F9F9B6 /* SampleXIBViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44D8130D211426B300F9F9B6 /* SampleXIBViewController.xib */; };
+		44D813112114354F00F9F9B6 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D813102114354F00F9F9B6 /* SecondViewController.swift */; };
 		614893C22AF11EA42317D64D /* Pods_TestSwiftApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3151CDCEB8C4B045B829C355 /* Pods_TestSwiftApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +30,10 @@
 		442210D921115B5B00720C22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		442210DB21115B5B00720C22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		44AFB40821118440000B336E /* CalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
+		44D81306211421EC00F9F9B6 /* SampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleViewController.swift; sourceTree = "<group>"; };
+		44D8130C211426B300F9F9B6 /* SampleXIBViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleXIBViewController.swift; sourceTree = "<group>"; };
+		44D8130D211426B300F9F9B6 /* SampleXIBViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SampleXIBViewController.xib; sourceTree = "<group>"; };
+		44D813102114354F00F9F9B6 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		45100F51350A717575C97FF7 /* Pods-TestSwiftApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestSwiftApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestSwiftApp/Pods-TestSwiftApp.release.xcconfig"; sourceTree = "<group>"; };
 		C3BE4C5A89DD2C616AE0AAB4 /* Pods-TestSwiftApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestSwiftApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestSwiftApp/Pods-TestSwiftApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -64,9 +72,13 @@
 			isa = PBXGroup;
 			children = (
 				442210CF21115B5B00720C22 /* AppDelegate.swift */,
+				44D8130C211426B300F9F9B6 /* SampleXIBViewController.swift */,
+				44D8130D211426B300F9F9B6 /* SampleXIBViewController.xib */,
 				442210D121115B5B00720C22 /* MainViewController.swift */,
 				442210D321115B5B00720C22 /* Main.storyboard */,
 				44AFB40821118440000B336E /* CalculatorViewController.swift */,
+				44D81306211421EC00F9F9B6 /* SampleViewController.swift */,
+				44D813102114354F00F9F9B6 /* SecondViewController.swift */,
 				442210D621115B5B00720C22 /* Assets.xcassets */,
 				442210D821115B5B00720C22 /* LaunchScreen.storyboard */,
 				442210DB21115B5B00720C22 /* Info.plist */,
@@ -152,6 +164,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44D8130F211426B300F9F9B6 /* SampleXIBViewController.xib in Resources */,
 				442210DA21115B5B00720C22 /* LaunchScreen.storyboard in Resources */,
 				442210D721115B5B00720C22 /* Assets.xcassets in Resources */,
 				442210D521115B5B00720C22 /* Main.storyboard in Resources */,
@@ -204,8 +217,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44D8130E211426B300F9F9B6 /* SampleXIBViewController.swift in Sources */,
 				442210D221115B5B00720C22 /* MainViewController.swift in Sources */,
 				44AFB40921118440000B336E /* CalculatorViewController.swift in Sources */,
+				44D81307211421EC00F9F9B6 /* SampleViewController.swift in Sources */,
+				44D813112114354F00F9F9B6 /* SecondViewController.swift in Sources */,
 				442210D021115B5B00720C22 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
