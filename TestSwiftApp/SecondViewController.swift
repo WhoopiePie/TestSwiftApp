@@ -7,8 +7,8 @@
 //
 
 import UIKit
-
 class SecondViewController: UIViewController {
+    weak var delegate: SecondViewControllerDelegate?
     var fromSampleView = ""
 
     override func viewDidLoad() {
@@ -17,15 +17,15 @@ class SecondViewController: UIViewController {
         // Do any additional setup after loading the view.
         textField.text = fromSampleView
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+    
     @IBOutlet weak var textField: UITextField!
+    @IBAction func backProgrammatically(_ sender: UIButton) {
+        dismiss(animated: false, completion: {print("from second")})
+//        delegate?.secondViewController(self, didTapButton: sender)
+    }
     
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
-        guard (textField.text?.contains("Back"))! else {
+        guard (textField.text?.contains("Back"))! || (textField.text?.contains("qqq"))! else {
             return false
         }
         return true

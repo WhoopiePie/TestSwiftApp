@@ -8,7 +8,11 @@
 
 import UIKit
 
-class SampleViewController: UIViewController {
+protocol SecondViewControllerDelegate: class {
+    func secondViewController(_ viewController: SecondViewController, didTapButton button: UIButton)
+}
+
+class SampleViewController: UIViewController, SecondViewControllerDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,6 +38,17 @@ class SampleViewController: UIViewController {
         }
     }
     
+    @IBAction func secondButtonTappedProgrammatically(_ sender: UIButton) {
+        guard let secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "SecondView") as? SecondViewController else {
+            return
+        }
+        secondViewController.delegate = self
+        secondViewController.fromSampleView = label.text ?? ""
+        present(secondViewController, animated: true, completion: nil)
+    }
+    func secondViewController(_ viewController: SecondViewController, didTapButton button: UIButton) {
+        dismiss(animated: false, completion: nil)
+    }
     @IBAction func secondButtonTapped(_ sender: UIButton) {
         performSegue(withIdentifier: "presentSecondViewController", sender: self)
     }
